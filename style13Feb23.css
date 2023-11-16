@@ -1,0 +1,50 @@
+/* transform: translate(), rotate(), scale(), skew()
+transition: (change over time)
+animation: (change over time with points) */
+
+/* The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements. */
+
+/* CSS transitions allows you to change property values smoothly, over a given duration. */
+
+/* An animation lets an element gradually change from one style to another. */
+
+/* transform: translate== The translate property allows you to change the position of elements.
+
+The translate property defines x- and y-coordinates of an element in 2D. You can also define the z-coordinate to change position in 3D. */
+
+/* transform:scale==  The scale property allows you to change the size of elements.
+
+The scale property defines values for how much an element is scaled in x- and y-directions. You can also define how much an element is scaled in z-direction.*/
+
+/* Scale values can be given as one value, two values, or three values.
+
+If one value is given, the element is scaled the same amount in both x- and y-direction.
+If two values are given, the element is scaled in x- and y-direction individually.
+If three values are given, the element is scaled in x-, y- and z-direction individually. */
+
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+
+.one {
+  background: #ff0000;
+  transform: scaleX(2);
+  /* the image will be twice as big in the x direction , ie on the left hand side and right hand side*/
+}
+.two {
+  background: blue;
+  transform: translateY(30px);
+  /* -30px will move it up while 30px will move it down */
+transform: scaleY(0.5);
+/* the image will be half the value in y direction */
+
+}
+
+.three {
+  background: green;
+  /* both x and y axis */
+  /* transform: translate(200px, 30px); */
+  transform: scale(0.5, 2);
+}
